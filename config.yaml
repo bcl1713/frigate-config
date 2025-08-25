@@ -29,6 +29,8 @@ birdseye:
   quality: 1
   restream: true
 go2rtc:
+  webrtc:
+    listen: ":8555"
   streams:
     living_room:
       - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.13:554/cam/realmonitor?channel=1&subtype=0
@@ -46,6 +48,10 @@ go2rtc:
       - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.12:554/cam/realmonitor?channel=1&subtype=0#backchannel=0
     front_doorbell_sub:
       - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.12:554/cam/realmonitor?channel=1&subtype=1#backchannel=0
+    front_doorbell_2way:
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.12:554/cam/realmonitor?channel=1&subtype=0
+      - "ffmpeg:front_doorbell_2way#audio=aac"
+      - "ffmpeg:front_doorbell_2way_mic#audio=pcma"
 cameras:
   living_room:
     enabled: true
