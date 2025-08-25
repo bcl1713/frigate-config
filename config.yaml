@@ -53,9 +53,7 @@ go2rtc:
       - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.12:554/cam/realmonitor?channel=1&subtype=1#backchannel=0
     front_doorbell_2way:
       - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.12:554/cam/realmonitor?channel=1&subtype=0
-      - "ffmpeg:front_doorbell_2way#audio=aac"
-      - "ffmpeg:front_doorbell_2way#audio=opus"
-      - "ffmpeg:front_doorbell_2way?video&audio"
+      - ffmpeg:front_doorbell_2way#audio=opus
 cameras:
   living_room:
     enabled: true
