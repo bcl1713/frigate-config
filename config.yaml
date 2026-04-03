@@ -36,17 +36,17 @@ go2rtc:
       - stun:8555
   streams:
     living_room:
-      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.13:554/cam/realmonitor?channel=1&subtype=0
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.10.40.13:554/cam/realmonitor?channel=1&subtype=0
     living_room_sub:
-      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.13:554/cam/realmonitor?channel=1&subtype=1
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.10.40.13:554/cam/realmonitor?channel=1&subtype=1
     back_door:
-      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.10:554/cam/realmonitor?channel=1&subtype=0
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.10.40.10:554/cam/realmonitor?channel=1&subtype=0
     back_door_sub:
-      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.10:554/cam/realmonitor?channel=1&subtype=1
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.10.40.10:554/cam/realmonitor?channel=1&subtype=1
     front_drive:
-      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.11:554/cam/realmonitor?channel=1&subtype=0
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.10.40.12:554/cam/realmonitor?channel=1&subtype=0
     front_drive_sub:
-      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.86.11:554/cam/realmonitor?channel=1&subtype=1
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.10.40.12:554/cam/realmonitor?channel=1&subtype=1
     front_doorbell:
       - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@10.10.40.11:554/cam/realmonitor?channel=1&subtype=0#backchannel=0
     front_doorbell_sub:
